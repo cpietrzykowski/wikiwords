@@ -1,0 +1,27 @@
+{
+  "name": "wikiwords",
+  "version": "0.0.0",
+  "main": "index.js",
+  "author": "Christopher Pietrzykowski",
+  "license": "mit",
+  "private": true,
+  "scripts": {
+    "build": "babel --source-maps true --minified --no-comments --out-dir ./dist/wikiwords ./src",
+    "dev": "babel-node ./src",
+    "start": "node ./dist/wikiwords"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "env": "^0.0.2",
+    "eslint": "^4.15.0",
+    "eslint-config-google": "^0.9.1"
+  },
+  "dependencies": {
+    "better-sqlite3": "^4.1.0",
+    "node-expat": "^2.3.16",
+    "node-gyp": "^3.6.2"
+  }
+}
